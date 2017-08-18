@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 3 Breadcrumbs Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css">
+.bs-example {
+   margin: 20px;
+   }
+.btn-breadcrumb .btn:not(:last-child):after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 17px solid transparent;
+  border-bottom: 17px solid transparent;
+  border-left: 10px solid white;
+  position: absolute;
+  top: 50%;
+  margin-top: -17px;
+  left: 100%;
+  z-index: 3;
+}
+.btn-breadcrumb .btn:not(:last-child):before {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 17px solid transparent;
+  border-bottom: 17px solid transparent;
+  border-left: 10px solid rgb(173, 173, 173);
+  position: absolute;
+  top: 50%;
+  margin-top: -17px;
+  margin-left: 1px;
+  left: 100%;
+  z-index: 3;
+}
+.btn-breadcrumb .btn {
+  padding:6px 12px 6px 24px;
+}
+.btn-breadcrumb .btn:first-child {
+  padding:6px 6px 6px 10px;
+}
+.btn-breadcrumb .btn:last-child {
+  padding:6px 18px 6px 24px;
+}
+.btn-breadcrumb .btn.btn-default:not(:last-child):after {
+  border-left: 10px solid #fff;
+}
+.btn-breadcrumb .btn.btn-default:not(:last-child):before {
+  border-left: 10px solid #ccc;
+}
+.btn-breadcrumb .btn.btn-default:hover:not(:last-child):after {
+  border-left: 10px solid #ebebeb;
+}
+.btn-breadcrumb .btn.btn-default:hover:not(:last-child):before {
+  border-left: 10px solid #adadad;
+}  
+</style>
+</head>
+<body>
+<div class="container bs-example">
+    <div class="row">
+    	<h2>Bootstrap 3 Breadcrumbs Arrow</h2>
+        <div class="btn-group btn-breadcrumb">
+            <a href="http://www.tutorialmines.net" class="btn btn-default"><i class="glyphicon glyphicon-home"></i></a>
+            <a href="http://www.tutorialmines.net/javascript-tutorials/" class="btn btn-default">JavaScript Tutorials</a>
+            <a href="http://www.tutorialmines.net/bootstrap-3-tutorial/" class="btn btn-default">Bootstrap 3 Tutorials</a>
+			<a href="http://www.tutorialmines.net/interview-question-and-answers/" class="btn btn-default">Interview Question and Answers</a>
+        </div>
+	</div>
+   
+</div> 
+
+
+</body>
+</html>
